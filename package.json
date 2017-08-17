@@ -36,7 +36,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Black-Yamasan/jqury-scrollAddclass.git"
+    "url": "git+https://github.com/Black-Yamasan/jquery-scrollAddclass.git"
   },
   "keywords": [
     "npm",
@@ -47,7 +47,7 @@
   "author": "Black-Yamasan",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Black-Yamasan/jqury-scrollAddclass/issues"
+    "url": "https://github.com/Black-Yamasan/jquery-scrollAddclass/issues"
   },
-  "homepage": "https://github.com/Black-Yamasan/jqury-scrollAddclass#readme"
+  "homepage": "https://github.com/Black-Yamasan/jquery-scrollAddclass#readme"
 }
