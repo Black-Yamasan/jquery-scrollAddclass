@@ -1,0 +1,83 @@
+/**
+* pages/_top.scss
+**/
+
+.main {
+
+  &Tit {
+    @include fontSize(28);
+    font-weight: bold;
+    margin-bottom: 20px;
+    position: relative;
+    padding-bottom: 10px;
+    line-height: 1.3;
+    &:before {
+      width: 100%;
+      height: 2px;
+      background: $FONT_COLOR;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      content: '';
+    }
+  }
+
+  &Caption {
+    margin-bottom: 80px;
+    &_tit {
+      font-weight: bold;
+      @include fontSize(24);
+      margin-bottom: 15px;
+    }
+  }
+
+  .block {
+    margin-bottom: 100px;
+    &Tit {
+      font-weight: bold;
+      @include fontSize(18);
+      margin-bottom: 10px;
+      line-height: 1.2;
+      padding-left: 20px;
+      position: relative;
+      &:before {
+        position: absolute;
+        left: 0;
+        top: 4px;
+        content: '';
+        background: $FONT_COLOR;
+        width: 12px;
+        height: 12px;
+      }
+    }
+    &Caption {
+      @include fontSize(14);
+      margin-bottom: 20px;
+    }
+  }
+
+  .js-slideIn {
+    @include transition(all, 0.4s, linear);
+    @include opacity(0);
+    @include translate(0, 60px);
+    &.slideIn {
+      @include translate(0, 0);
+      @include opacity(1);
+    }
+  }
+
+  .js-fadeIn {
+    @include opacity(0);
+    @include transition(all, 0.9s, linear);
+    &.fadeIn {
+      @include opacity(1);
+    }
+  }
+
+  .js-fadeOut {
+    @include transition(all, 0.8s, linear);
+    &.fadeOut {
+      @include opacity(0);
+    }
+  }
+}

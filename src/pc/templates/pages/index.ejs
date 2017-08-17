@@ -1,0 +1,39 @@
+<%_
+  var root = ''
+  var pageId = 'top'
+  var title = 'Demo page - scrollAddClass'
+  var description = 'プラグイン scrollAddClass のデモページです。'
+  var cssFile = []
+  var jsFile = ['demo']
+_%>
+<%_ include ../include/_header _%>
+      <section class="main">
+        <h1 class="mainTit">スクロールしたらクラスを付ける(1回のみ)</h1>
+        <div class="mainCaption">
+          <h2 class="mainCaption_tit">仕様</h2>
+          <p class="mb10">該当要素までスクロールしたときに1回だけクラスをつけるプラグインです。</p>
+          <p>スクロールした後に要素をスライドインさせたい時などに使えます。</p>
+        </div>
+        <section class="block">
+          <h3 class="blockTit">スライドイン</h3>
+          <p class="blockCaption">ウィンドウの高さの半分まで移動して100ms後にスライドイン</p>
+          <div class="blockContent">
+            <p id="js-slideIn" class="js-slideIn blockImg"><img src="<%= root %>images/img_1.jpg" alt="" class="resp"></p>
+          </div>
+        </section>
+        <section class="block">
+          <h3 class="blockTit">フェードイン</h3>
+          <p class="blockCaption">ウィンドウの高さの半分まで移動して500ms後にフェードイン</p>
+          <div class="blockContent">
+            <p id="js-fadeIn" class="js-fadeIn blockImg"><img src="<%= root %>images/img_1.jpg" alt="" class="resp"></p>
+          </div>
+        </section>
+        <section class="block">
+          <h3 class="blockTit">フェードアウト</h3>
+          <p class="blockCaption">ウィンドウの高さの半分まで移動して800ms後にフェードアウト</p>
+          <div class="blockContent">
+            <p id="js-fadeOut" class="js-fadeOut blockImg"><img src="<%= root %>images/img_1.jpg" alt="" class="resp"></p>
+          </div>
+        </section>
+      </section>
+<%_ include ../include/_footer _%>

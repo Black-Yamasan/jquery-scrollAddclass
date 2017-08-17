@@ -1,0 +1,108 @@
+/* --HTML-- */
+html {
+color: $FONT_COLOR;
+overflow-y:scroll;
+}
+
+/* --BODY-- */
+body {
+	font-size: 16px;
+	font-family: $FONT_DEFAULT;
+	line-height: 1.5;
+	margin:0;
+	overflow: hidden;
+	padding:0;
+	letter-spacing: 1.2px;
+	-webkit-text-size-adjust: 100%;
+	box-sizing:border-box;
+	-webkit-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+
+	@media#{$large} {
+		min-width: $MIN_WIDTH;
+	}
+}
+
+img {
+	vertical-align:bottom;
+}
+
+/* --OTHER TAGS-- */
+a {
+overflow:hidden;
+outline:none;
+text-decoration:none;
+}
+
+a img, img {
+border:0;
+}
+
+a img {
+background: none;
+}
+
+@media#{$small} {
+	img.resp {
+		width: 100%;
+		height: auto;
+	}
+}
+
+
+/* clearfix */
+.clearfix {
+	@include clearfix;
+}
+
+/*-----margin-----*/
+$value: 80;
+@while $value > 0 {
+	.mb#{$value} {
+		@include marginBottom($value);
+	}
+	$value: $value - 5;
+}
+
+.mr0 {
+	@include marginRight(0);
+}
+
+
+/*-----float-----*/
+.fl_l {
+	float:left;
+}
+.fl_r {
+	float:right;
+}
+.cl_both {
+	clear:both;
+}
+
+/*-----font-----*/
+.fw_b {
+	font-weight:bold;
+}
+
+.ta_r {
+	text-align:right;
+}
+.ta_c {
+	text-align:center;
+}
+.ta_l {
+	text-align:left;
+}
+
+.f_min {
+	font-family: $FONT_MIN;
+}
+
+$value: 20;
+@while $value > 10 {
+	.fs#{$value} {
+		@include fontSize($value);
+	}
+	$value: $value - 1;
+}

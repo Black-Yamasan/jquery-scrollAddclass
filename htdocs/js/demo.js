@@ -1,0 +1,1 @@
+$(function(){var e=$("#js-slideIn"),s=$("#js-fadeIn"),d=$("#js-fadeOut"),a={className:"slideIn",devideHeight:2,timeout:100},l={className:"fadeIn",devideHeight:2,timeout:500},i={className:"fadeOut",devideHeight:2,timeout:800};e.scrollAddClass(a),s.scrollAddClass(l),d.scrollAddClass(i)});

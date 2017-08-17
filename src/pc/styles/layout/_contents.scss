@@ -1,0 +1,16 @@
+/**
+* layout/_contents.scss
+**/
+
+#wrapper {
+  overflow: hidden;
+  @include fontSize(16);
+}
+
+#container {
+  padding: 0 15px 50px 15px;
+  @media#{$large} {
+    width: $MIN_WIDTH;
+    margin: 0 auto;
+  }
+}

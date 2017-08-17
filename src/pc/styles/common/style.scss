@@ -1,0 +1,15 @@
+@import '../config';
+@import '../reset';
+@import '../default';
+
+/*-----------------------------------------
+  01: layout
+------------------------------------------*/
+@import '../layout/header';
+@import '../layout/footer';
+@import '../layout/contents';
+
+/*-----------------------------------------
+  02: page
+------------------------------------------*/
+@import '../pages/top';

@@ -1,0 +1,22 @@
+@import '../mixin/clearfix';
+@import '../mixin/fontsize';
+@import '../mixin/margin';
+@import '../mixin/opacity';
+@import '../mixin/transform';
+@import '../mixin/transition';
+
+$FONT_COLOR: #5a5a5a;
+$FONT_DEFAULT: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+$FONT_MIN: "ヒラギノ明朝 ProN W6","HiraMinProN-W6","HG明朝E","ＭＳ Ｐ明朝","MS PMincho","MS 明朝",serif;
+
+$small: "only screen and ( max-width: 600px )";
+$medium: "screen and ( min-width: 601px) and ( max-width: 960px )";
+$large: "only screen and ( min-width: 961px) ";
+
+$MIN_WIDTH: 1060px;
+
+$COLOR_LB: rgb(0, 189, 201);
+$COLOR_BL: rgb(0, 73, 171);
+$COLOR_NAVI: rgb(176, 217, 232);
+$COLOR_GRAY: #d0d0d0;
+$COLOR_LG: #9f9f9f;
