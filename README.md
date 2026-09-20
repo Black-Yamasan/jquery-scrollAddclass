@@ -1,10 +1,5 @@
 # jquery-scrollAddclass
 
-
-## デモページ
-[Demo page - scrollAddClass](http://azure-eyed-cat.com/demo/2017/01/)
-
-
 ## 使い方
 - headerにjQuery本体とimagesLoadedのプラグイン、本プラグインを読み込み  
 - 本プラグインを呼び出す為のjsファイルを用意し、headerのプラグイン用のファイルの後若しくはページの下部にjsを設置
